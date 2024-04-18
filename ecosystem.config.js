@@ -1,7 +1,7 @@
 module.exports = {
   apps : [
       {
-        name: "cruxdevs",
+        name: "fluxfantasy",
         script: "npm start",
         port: 3002
       }
