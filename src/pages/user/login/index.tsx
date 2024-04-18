@@ -5,13 +5,10 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 
-const ForgotPassword = dynamic(
-  () => import('@/components/login/ForgotPassword'),
-  { ssr: false }
-);
-const Input = dynamic(() => import('@/components/Input'), { ssr: false });
-const Image = dynamic(() => import('@/components/Image'), { ssr: false });
-const Button = dynamic(() => import('@/components/Button'), { ssr: false });
+import ForgotPassword from "../../../components/login/ForgotPassword"
+import Button from "../../../components/Button";
+import Input from "../../../components/Input";
+import Image from "../../../components/Image";
 
 function Index() {
   const [open, setOpen] = useState(false);

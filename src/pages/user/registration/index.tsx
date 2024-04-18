@@ -4,12 +4,11 @@ import dynamic from "next/dynamic";
 import React from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 
-const Button = dynamic(() => import("@/components/Button"), { ssr: false });
-const Image = dynamic(() => import("@/components/Image"), { ssr: false });
-const Input = dynamic(() => import("@/components/Input"), { ssr: false });
-const Dropdown = dynamic(() => import("@/components/Dropdown"), {
-  ssr: false,
-});
+import Button from "../../../components/Button";
+import Input from "../../../components/Input";
+import Image from "../../../components/Image";
+import Dropdown from "../../../components/Dropdown";
+
 
 function Index() {
   const gender = [
@@ -29,6 +28,7 @@ function Index() {
           Register Your Self
         </h1>
       </div>
+     
       <div className="mt-4 flex flex-col justify-center items-center">
         <div className="w-1/2 flex flex-col justify-center   gap-4 mt-4">
           <div className="w-full">
