@@ -7,7 +7,6 @@ import Input from "@/components/Input";
 import Image from "@/components/Image";
 import Dropdown from "@/components/Dropdown";
 
-
 function Index() {
   const gender = [
     {
@@ -26,7 +25,7 @@ function Index() {
           Register Your Self
         </h1>
       </div>
-     
+
       <div className="mt-4 flex flex-col justify-center items-center">
         <div className="w-full grid-cols-1 grid md:grid-cols-2   gap-4 mt-4">
           <div className="w-full">
@@ -84,7 +83,6 @@ function Index() {
               inputClassName="focus:outline-none focus:border-none py-3 px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
             />
           </div>
-    
 
           <div className="w-full">
             <label
