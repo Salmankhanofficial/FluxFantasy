@@ -5,10 +5,10 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 
-import ForgotPassword from "../../../components/login/ForgotPassword"
-import Button from "../../../components/Button";
-import Input from "../../../components/Input";
-import Image from "../../../components/Image";
+import ForgotPassword from "@/components/login/ForgotPassword"
+import Button from "@/components/Button";
+import Input from "@/components/Input";
+import Image from "@/components/Image";
 
 function Index() {
   const [open, setOpen] = useState(false);
@@ -18,21 +18,21 @@ function Index() {
   };
 
   return (
-    <div className="w-full bg-white overflow-scroll h-[100vh] flex items-center">
+    <div className="w-full bg-white overflow-hidden h-[100vh] flex items-center">
       <title>LogIn</title>
       <Image
         src="/images/login/topright.png"
         alt="login-top-right image"
         width={0}
         height={0}
-        className="w-1/4 aspect-square absolute top-0 right-0"
+        className="w-1/5 hidden md:block aspect-square absolute top-0 right-0"
       />
       <Image
         src="/images/login/login-bottom.webp"
         alt="login-bottom-left image"
         width={0}
         height={0}
-        className="w-1/4 aspect-square absolute bottom-0 left-0"
+        className="w-1/5 hidden md:block aspect-square absolute bottom-0 left-0"
       />
       <div
         className="w-full my-20 md:w-[35%] md:min-w-[500px] mx-auto flex flex-col items-center justify-center px-5 lg:px-0 py-6 relative bg-transparent"
@@ -116,9 +116,7 @@ function Index() {
           {`Don't you have an account?`}
           <Link href={'/user/registration'} className="text-[#1E4AE9] cursor-pointer"> Sign up</Link>
         </h1>
-        <h1 className="text-[#959CB6] text-sm text-center font-NotoSans leading-3 absolute bottom-1 ">
-          © 2024 ALL RIGHTS RESERVED
-        </h1>
+   
       </div>
       <ForgotPassword open={open} setOpen={setOpen} />
     </div>

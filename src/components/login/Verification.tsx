@@ -126,9 +126,9 @@ const Verification: React.FC<VerificationProps> = ({ mainClassName, next }) => {
                   inputClassName={`w-[60px] sm:w-[70px] md:w-[84px] h-[50px] sm:h-[60px] md:h-[76px] p-5 rounded-md text-center focus:outline-none focus:border-none ${
                     error ? 'border-red-500' : ''
                   }`}
-                  ref={(input: HTMLInputElement | null) =>
-                    (inputRefs.current[index] = input)
-                  }
+                  // ref={(input: HTMLInputElement | null) =>
+                  //   (inputRefs.current[index] = input)
+                  // }
                 />
               ))}
             </div>
