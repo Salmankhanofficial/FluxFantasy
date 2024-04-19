@@ -109,7 +109,7 @@ function Index() {
         >
           <FcGoogle className="w-7 h-7" />
           <h1 className="text-[#313957] text-base font-NotoSans leading-4">
-             Sign in with Google
+             Sign in with Google.
           </h1>
         </Button>
         <h1 className="text-base text-black font-NotoSans leading-[28px]">
