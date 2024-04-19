@@ -1,11 +1,11 @@
-'useclient';
+"useclient";
 
-import dynamic from 'next/dynamic';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { FcGoogle } from 'react-icons/fc';
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import React, { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 
-import ForgotPassword from "@/components/login/ForgotPassword"
+import ForgotPassword from "@/components/login/ForgotPassword";
 import Button from "@/components/Button";
 import Input from "@/components/Input";
 import Image from "@/components/Image";
@@ -38,9 +38,9 @@ function Index() {
         className="w-full my-20 md:w-[35%] md:min-w-[500px] mx-auto flex flex-col items-center justify-center px-5 lg:px-0 py-6 relative bg-transparent"
         style={{
           backgroundImage: `url('/images/login/background.webp')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          WebkitBackgroundOrigin: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          WebkitBackgroundOrigin: "center",
         }}
       >
         <h1 className="text-[#092C4C] text-[30px] font-black font-NotoSans leading-[40px]">
@@ -109,14 +109,19 @@ function Index() {
         >
           <FcGoogle className="w-7 h-7" />
           <h1 className="text-[#313957] text-base font-NotoSans leading-4">
-             Sign in with Google.
+            Sign in with Google.
           </h1>
         </Button>
         <h1 className="text-base text-black font-NotoSans leading-[28px]">
           {`Don't you have an account?`}
-          <Link href={'/user/registration'} className="text-[#1E4AE9] cursor-pointer"> Sign up</Link>
+          <Link
+            href={"/user/registration"}
+            className="text-[#1E4AE9] cursor-pointer"
+          >
+            {" "}
+            Sign up
+          </Link>
         </h1>
-   
       </div>
       <ForgotPassword open={open} setOpen={setOpen} />
     </div>
