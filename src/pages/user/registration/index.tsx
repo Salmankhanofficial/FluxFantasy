@@ -1,14 +1,11 @@
 "useclient";
 
-import dynamic from "next/dynamic";
 import React from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
-
-import Button from "../../../components/Button";
-import Input from "../../../components/Input";
-import Image from "../../../components/Image";
-import Dropdown from "../../../components/Dropdown";
-
+import Button from "@/components/Button";
+import Input from "@/components/Input";
+import Image from "@/components/Image";
+import Dropdown from "@/components/Dropdown";
 
 function Index() {
   const gender = [
@@ -28,9 +25,9 @@ function Index() {
           Register Your Self
         </h1>
       </div>
-     
+
       <div className="mt-4 flex flex-col justify-center items-center">
-        <div className="w-1/2 flex flex-col justify-center   gap-4 mt-4">
+        <div className="w-full grid-cols-1 grid md:grid-cols-2   gap-4 mt-4">
           <div className="w-full">
             <label
               htmlFor=""
@@ -78,28 +75,12 @@ function Index() {
               htmlFor=""
               className="text-[#0C1421] text-base font-roboto leading-4"
             >
-              Select Date of Birth
+              Date of Birth
             </label>
             <Input
               type="date"
               className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[6px] mt-1"
               inputClassName="focus:outline-none focus:border-none py-3 px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
-            />
-          </div>
-          <div className="w-full">
-            <label
-              htmlFor=""
-              className="text-[#0C1421] text-base font-roboto leasding-4"
-            >
-              Gender
-            </label>
-            <Dropdown
-              options={gender}
-              bodyClassName="!bg-[#F7FBFF]"
-              placeholder="Select Gender"
-              icon={<TiArrowSortedDown className="text-[#8897AD] w-4 h-4" />}
-              onSelect={() => {}}
-              className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[6px] py-2.5 mt-1"
             />
           </div>
 
@@ -136,19 +117,19 @@ function Index() {
         <div className="w-full flex justify-center mt-10 mb-11">
           <Button
             type="submit"
-            className="bg-[#1E4178] rounded-md text-[#FFFFFF] text-xl font-bold font-NotoSans leading-5 py-3  w-1/2"
+            className="bg-[#1E4178] w-full rounded-md text-[#FFFFFF] text-xl font-bold font-NotoSans leading-5 py-3 "
           >
-            Submit
+            Sign Up
           </Button>
         </div>
       </div>
-      <Image
-        src="/images/signup/registration.webp"
+      {/* <Image
+        src="/images/signup/flux-p.png"
         alt=""
-        width={0}
-        height={0}
-        className="w-[120px] aspect-auto absolute bottom-0 left-0 opacity-50 hidden md:block"
-      />
+        width={330}
+        height={100}
+        className=" absolute bottom-40 left-0 opacity-80 hidden md:block"
+      /> */}
     </div>
   );
 }

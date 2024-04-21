@@ -1,14 +1,14 @@
-'useclient';
+"useclient";
 
-import dynamic from 'next/dynamic';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { FcGoogle } from 'react-icons/fc';
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import React, { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 
-import ForgotPassword from "../../../components/login/ForgotPassword"
-import Button from "../../../components/Button";
-import Input from "../../../components/Input";
-import Image from "../../../components/Image";
+import ForgotPassword from "@/components/login/ForgotPassword";
+import Button from "@/components/Button";
+import Input from "@/components/Input";
+import Image from "@/components/Image";
 
 function Index() {
   const [open, setOpen] = useState(false);
@@ -18,29 +18,29 @@ function Index() {
   };
 
   return (
-    <div className="w-full bg-white overflow-scroll h-[100vh] flex items-center">
+    <div className="w-full bg-white overflow-hidden h-[100vh] flex items-center">
       <title>LogIn</title>
       <Image
         src="/images/login/topright.png"
         alt="login-top-right image"
         width={0}
         height={0}
-        className="w-1/4 aspect-square absolute top-0 right-0"
+        className="w-1/5 hidden md:block aspect-square absolute top-0 right-0"
       />
       <Image
         src="/images/login/login-bottom.webp"
         alt="login-bottom-left image"
         width={0}
         height={0}
-        className="w-1/4 aspect-square absolute bottom-0 left-0"
+        className="w-1/5 hidden md:block aspect-square absolute bottom-0 left-0"
       />
       <div
         className="w-full my-20 md:w-[35%] md:min-w-[500px] mx-auto flex flex-col items-center justify-center px-5 lg:px-0 py-6 relative bg-transparent"
         style={{
           backgroundImage: `url('/images/login/background.webp')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          WebkitBackgroundOrigin: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          WebkitBackgroundOrigin: "center",
         }}
       >
         <h1 className="text-[#092C4C] text-[30px] font-black font-NotoSans leading-[40px]">
@@ -109,15 +109,18 @@ function Index() {
         >
           <FcGoogle className="w-7 h-7" />
           <h1 className="text-[#313957] text-base font-NotoSans leading-4">
-             Sign in with Google
+            Sign in with Google.
           </h1>
         </Button>
         <h1 className="text-base text-black font-NotoSans leading-[28px]">
           {`Don't you have an account?`}
-          <Link href={'/user/registration'} className="text-[#1E4AE9] cursor-pointer"> Sign up</Link>
-        </h1>
-        <h1 className="text-[#959CB6] text-sm text-center font-NotoSans leading-3 absolute bottom-1 ">
-          © 2024 ALL RIGHTS RESERVED
+          <Link
+            href={"/user/registration"}
+            className="text-[#1E4AE9] cursor-pointer"
+          >
+            {" "}
+            Sign up
+          </Link>
         </h1>
       </div>
       <ForgotPassword open={open} setOpen={setOpen} />
