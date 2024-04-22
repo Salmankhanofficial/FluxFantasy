@@ -95,7 +95,7 @@ const Index = () => {
           Character Library
         </h1>
 
-        <button className="text-white px-2 text-base font-bold py-2 mt-4 rounded-md bg-green-500 hover:bg-green-800 hover:font-norml">
+        <button onClick={()=>router?.push('/user/charactersheet')} className="text-white px-2 text-base font-bold py-2 mt-4 rounded-md bg-green-500 hover:bg-green-800 hover:font-norml">
           Create New Character
         </button>
       </div>
