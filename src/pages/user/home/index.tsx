@@ -1,10 +1,12 @@
 import Header from "@/components/Header";
 import { AffiliteIcon } from "@/components/icon";
+import { useRouter } from "next/router";
 import React from "react";
 import { FaLandmarkFlag } from "react-icons/fa6";
 import { IoGameController } from "react-icons/io5";
 
 const Index = () => {
+  const router = useRouter();
   return (
     <div className="bg-black ">
       <Header />
