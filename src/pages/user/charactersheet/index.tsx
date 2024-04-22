@@ -500,12 +500,13 @@ const TestPage: React.FC = () => {
   };
 
   return (
-    <div className="w-full px-5 flex flex-col justify-center items-center">
+    <div className="w-full px-5 flex flex-col justify-center   items-center">
+    <div className="w-[98%] px-5 flex flex-col justify-center  border-4 my-8  items-center">
 
       {/* Logo & Input */}
       <div className="w-full flex flex-col md:flex-row justify-between items-center mb-4">
-        <div className="flex flex-col md:w-[13%] mb-2 md:mb-0">
-          <p className="font-extrabold tracking-[3px] gap-2">FLUX FANTASY.</p>
+        <div className="flex flex-col md:w-[40%] mb-2 md:mb-0">
+          <p className="font-extrabold tracking-[3px] gap-2 whitespace-nowrap text-4xl">FLUX FANTASY.</p>
           <p>CHARACTER STARTER</p>
         </div>
         <div className="flex justify-center items-center gap-2 w-full md:w-[85%]">
@@ -677,7 +678,7 @@ const TestPage: React.FC = () => {
                   </div>
                   <div className="w-1/2 ">
                     <p className="font-medium">Payback Required</p>
-                    <div className="border-[4px]border-gray-500 h-[630px]"></div>
+                    <div className="border-[4px] border-gray-500 h-[630px]"></div>
                     <p className="font-medium">Payback Required Intensifies</p>
                   </div>
                 </div>
@@ -765,6 +766,7 @@ const TestPage: React.FC = () => {
           </fieldset>
         </div>
       </div>
+    </div>
     </div>
   );
 };
