@@ -138,7 +138,7 @@ const Header = ({ className }: Props) => {
           <GoDotFill className="w-3 h-3 sm:w-5 sm:h-5 text-[#2AB930] bg-white border-2 border-white rounded-full bg absolute top-5 left-5 sm:top-7 sm:left-7 cursor-pointer" />
         </Link>
       </div>
-      {showNotification && (
+      {/* {showNotification && (
         // <Modal show={true} onClose={() => setshowNotification(false)} containerClass='!right-0'>
         <>
           <div className="absolute right-10 sm:right-24 top-16 z-20  rounded-md  bg-white w-1/2  ">
@@ -161,7 +161,7 @@ const Header = ({ className }: Props) => {
             <AccountSetup data={Profiledata} />
           </div>
         </Modal>
-      )}
+      )} */}
     </div>
   );
 };
