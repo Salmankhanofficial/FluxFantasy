@@ -130,64 +130,20 @@ const Index = () => {
         </button>
       </div>
 
-      <div className="flex flex-wrap  bg-black py-4   w-[90%] gap-y-8 md:px-1 sm:w-[95%] lg:w-[70%] mx-auto gap-2  md:gap-4">
-        {characterData?.map((character,index)=>(
-            <div  key={index} className="border border-green-500 rounded-xl px-4 py-4 w-full  md:w-[32%] mx-auto cursor-pointer hover:scale-105 transition-transform duration-300 delay-100">
-            <img
-              src={character?.img}
-              className="rounded-xl w-full hover:w-full"
-            />
-            <h1 className="text-white text-center py-1 text-xl hover:text-green-500 cursor-pointer transition-colors duration-300 delay-100">
-              {character?.title}
-            </h1>
-          </div>
+      <div className="flex flex-wrap justify-center bg-black py-4 w-full gap-y-8 px-6 md:px-1 sm:w-full lg:w-[70%] mx-auto gap-3">
+  {characterData?.map((character,index)=>(
+    <div  key={index} className="border border-green-500 rounded-xl px-4 py-4 w-full md:w-[48%] lg:w-[32%] cursor-pointer hover:scale-105 transition-transform duration-300 delay-100">
+      <img
+        src={character?.img}
+        className="rounded-xl w-full hover:w-full"
+      />
+      <h1 className="text-white text-center py-1 text-xl hover:text-green-500 cursor-pointer transition-colors duration-300 delay-100">
+        {character?.title}
+      </h1>
+    </div>
+  ))}
+</div>
 
-        ))}
-      
-        {/* <div className="border border-green-500 rounded-xl px-4 py-2 w-[32%] cursor-pointer hover:scale-105 transition-transform duration-300 delay-200">
-          <img src="/images/feature2.png" className="rounded-xl hover:w-full" />
-          <h1 className="text-white text-center py-2 text-xl transition-colors duration-300 delay-200">
-            Lorem ipsum dolor
-          </h1>
-        </div>
-        <div className="border border-green-500 rounded-xl px-4 py-2 w-[32%] cursor-pointer hover:scale-105 transition-transform duration-300 delay-300">
-          <img
-            src="/images/character3.png"
-            className="rounded-xl hover:w-full"
-          />
-          <h1 className="text-white text-center py-2 text-xl transition-colors duration-300 delay-300">
-            Lorem ipsum dolor
-          </h1>
-        </div>
-
-        <div className="border border-green-500 rounded-xl px-4 py-2 w-[32%] cursor-pointer hover:scale-105 transition-transform duration-300 delay-300">
-          <img
-            src="/images/character3.png"
-            className="rounded-xl hover:w-full"
-          />
-          <h1 className="text-white text-center py-2 text-xl transition-colors duration-300 delay-300">
-            Lorem ipsum dolor
-          </h1>
-        </div>
-        <div className="border border-green-500 rounded-xl px-4 py-2 w-[32%] cursor-pointer hover:scale-105 transition-transform duration-300 delay-300">
-          <img
-            src="/images/character3.png"
-            className="rounded-xl hover:w-full"
-          />
-          <h1 className="text-white text-center py-2 text-xl transition-colors duration-300 delay-300">
-            Lorem ipsum dolor
-          </h1>
-        </div>
-        <div className="border border-green-500 rounded-xl px-4 py-2 w-[32%] cursor-pointer hover:scale-105 transition-transform duration-300 delay-300">
-          <img
-            src="/images/character3.png"
-            className="rounded-xl hover:w-full"
-          />
-          <h1 className="text-white text-center py-2 text-xl transition-colors duration-300 delay-300">
-            Lorem ipsum dolor
-          </h1>
-        </div> */}
-      </div>
     </div>
   );
 };
