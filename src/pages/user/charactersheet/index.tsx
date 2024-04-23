@@ -668,7 +668,7 @@ const TestPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="w-full flex  gap-4 mt-5  border-gray-500">
+            <div className="w-full flex  border-4 border-l-0 border-black  gap-4 mt-5  ">
               <div className="w-1/2 flex">
                 <div className="flex w-full gap-2">
                   <div className="w-1/2">
@@ -683,7 +683,7 @@ const TestPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-1/2 flex flex-col mr-2 border-r-[4px] border-gray-500">
+          <div className="w-1/2 flex  flex-col mr-2 ">
                 <p className="w-full text-end font-medium">Karmastry Power Profile</p>
 
                 {data.map((item) => (
