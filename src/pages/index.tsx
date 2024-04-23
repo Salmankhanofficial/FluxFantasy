@@ -5,7 +5,7 @@ const index = () => {
   return (
     <div>
       
-      <Identity/>
+      welcome to flux fantasy
     </div>
   )
 }
