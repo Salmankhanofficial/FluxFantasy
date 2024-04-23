@@ -23,7 +23,7 @@ const Faction: React.FC<Props> = ({ className, checkboxes, onCheckboxChange }) =
     <div className={` w-full flex flex-col bg-[#EDEDED]`} >
       <div className={`${className} w-full `}>
         {checkboxes.map((checkbox) => (
-          <div key={checkbox.id} className="flex gap-2 px-5 py-1">
+          <div key={checkbox.id} className="flex gap-2 py-1">
             <input 
               type="checkbox" 
               id={`checkbox-${checkbox.id}`} 

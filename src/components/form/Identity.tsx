@@ -3,7 +3,7 @@ import Input from '../Input'
 
 const Identity = () => {
   return (
-    <div className='w-full font-semibold text-lg bg-[#EDEDED] px-4 pb-8 '>
+    <div className='w-full font-semibold  bg-[#EDEDED] px-4 pb-8 text-xs sm:text-sm md:text-base'>
 
       <div>
         <h1 className='mb-2'>character Name</h1>
@@ -42,12 +42,12 @@ const Identity = () => {
       <div className='flex w-full gap-2 items-center jusitfy-between'>
         <div className='w-1/2 mx-auto'>
           <h1 className='font-semibold text-lg'>origin</h1>
-          <Input type='text ' className='py-1 bg-white w-full rounded-sm' inputClassName='bg-white' />
+          <input type='text ' className='py-1 bg-white w-full rounded-sm' />
         </div>
 
         <div className='w-1/2 mx-auto'>
           <h1 className='font-semibold text-lg'>Role/Rank</h1>
-          <Input type='text ' className='py-1 bg-white w-full rounded-sm' inputClassName='bg-white' />
+          <input type='text ' className='py-1 bg-white w-full rounded-sm'/>
         </div>
       </div>
 
