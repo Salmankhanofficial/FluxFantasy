@@ -1,11 +1,10 @@
-import Charactersheet from "@/components/Charactersheet";
 import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
   const characterData = [
     {
@@ -75,4 +74,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Button from './Button';
 import { GrShare } from 'react-icons/gr';
 import Link from 'next/link';
-import Image from './Image';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 interface dataarray {
   icon: string;
