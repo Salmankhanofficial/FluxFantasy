@@ -53,13 +53,13 @@ const index = () => {
         {characterData?.map((character, index) => (
           <div
             key={index}
-            className="border border-green-500 rounded-xl px-4 py-4 w-full md:w-[48%] lg:w-[32%] cursor-pointer hover:scale-105 transition-transform duration-300 delay-100"
+            className="border border-green-500 flex flex-col justify-center items-center rounded-xl px-4 py-4 w-full md:w-[48%] lg:w-[32%] cursor-pointer hover:scale-105 transition-transform duration-300 delay-100"
           >
             <Image
-              width={200}
-              height={200}
+              width={0}
+              height={0}
               src={character?.img}
-              className="rounded-xl w-full hover:w-full"
+              className="rounded-xl  w-[400px]  sm:w-[200px] sm:h-[200px] hover:w-full"
               alt={""}
             />
             <h1 className="text-white text-center py-1 text-xl hover:text-green-500 cursor-pointer transition-colors duration-300 delay-100">

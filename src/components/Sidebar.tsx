@@ -79,7 +79,7 @@ const Sidebar = ({ mainClassName, notificationLength,onClick }: props) => {
               ))}
             </ul>
 
-            <div className="bg-gray-500 w-[200px] h-[500px] mb-40 mt-10  flex justify-center items-center">
+            <div className="bg-gray-500 w-[200px] h-[600px] mb-40 mt-10  flex justify-center items-center">
               <p className="text-gray-600 ">300 X 600 AD</p>
             </div>
           </div>
