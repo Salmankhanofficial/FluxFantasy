@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/Header1";
 import { AffiliteIcon } from "@/components/icon";
 import { useRouter } from "next/router";
 import React from "react";
