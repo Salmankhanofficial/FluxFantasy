@@ -8,9 +8,9 @@ import { GoDotFill } from 'react-icons/go';
 import NotificationModel from './NotificationModel';
 import { RxCross2 } from 'react-icons/rx';
 import Modal from './Modal';
-import Image from './Image';
 import Link from 'next/link';
 import AccountSetup from './AccountSetup';
+import Image from 'next/image';
 // const imgurl=require('./')
 export interface Props {
   className?: string;

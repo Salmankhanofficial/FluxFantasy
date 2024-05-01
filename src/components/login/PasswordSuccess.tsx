@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from '../Image';
 import next from 'next';
+import Image from 'next/image';
 
 interface PasswordSuccessProps {
   mainClassName: string;

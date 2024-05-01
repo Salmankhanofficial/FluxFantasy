@@ -7,10 +7,13 @@ import { TbBrandTiktok } from "react-icons/tb";
 import Link from 'next/link';
 import Image from 'next/image';
 
-function Footer() {
+interface Props {
+  className: string;
+}
+function Footer({className}: Props) {
   return (
-    <div className='w-full flex justify-center items-center bg-slate-900'>
-        <div className='w-full sm:flex sm:flex-row flex-col  justify-between items-center text-base sm:text-[10px] md:text-sm lg:text-base'>
+    <div className={`w-full flex justify-center items-center bg-slate-900 sticky bottom-0 left-0 ${className}`}>
+        <div className='w-full sm:flex sm:flex-row flex-col md:py-4  justify-between items-center text-base sm:text-[10px] md:text-sm lg:text-base'>
             <div className='w-full py-4 sm:py-0 gap-7 sm:gap-0 sm:w-1/6 flex justify-center items-center sm:justify-between  '>
                <Link href={''}> <FaSquareFacebook className='text-white'/></Link>
                 <Link href={''}><FaInstagramSquare className='text-white'/></Link>

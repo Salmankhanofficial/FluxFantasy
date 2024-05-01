@@ -8,7 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import ForgotPassword from "@/components/login/ForgotPassword";
 import Button from "@/components/Button";
 import Input from "@/components/Input";
-import Image from "@/components/Image";
+import Image from "next/image";
 
 function Index() {
   const [open, setOpen] = useState(false);
