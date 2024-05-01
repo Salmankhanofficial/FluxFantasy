@@ -4,7 +4,7 @@ import React from 'react'
 function index() {
   return (
     <div>
-        <Footer/>
+        <Footer className={''}/>
       
     </div>
   )

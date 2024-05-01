@@ -6,49 +6,63 @@ import { FaSquareYoutube } from "react-icons/fa6";
 import { TbBrandTiktok } from "react-icons/tb";
 import Link from 'next/link';
 import Image from 'next/image';
-
-function Footer() {
+interface Props {
+  className: string;
+}
+function Footer({className}: Props) {
   return (
-    <div className='w-full flex justify-center items-center bg-slate-900'>
-        <div className='w-full sm:flex sm:flex-row flex-col  justify-between items-center text-base sm:text-[10px] md:text-sm lg:text-base'>
-            <div className='w-full py-4 sm:py-0 gap-7 sm:gap-0 sm:w-1/6 flex justify-center items-center sm:justify-between  '>
-               <Link href={''}> <FaSquareFacebook className='text-white'/></Link>
-                <Link href={''}><FaInstagramSquare className='text-white'/></Link>
-               <Link href={''}> <FaSquareTwitter className='text-white'/></Link>
-               <Link href={''}> <FaSquareYoutube className='text-white'/></Link>
-                <Link href={''}><TbBrandTiktok className='text-white'/></Link>
-            </div>
-            <div className='flex justify-center py-4 sm:py-0 items-center sm:justify-between  sm:flex sm:flex-row flex-col  w-full px-8 text-white text-nowrap'>
-                <Link href={''}>
-                <p>© FLUXFANTASY</p>
-                </Link>
 
-                <Link href={''}>
-                <p className='flex gap-2 mb-1'><span className='hidden sm:block'>|</span> <span className='mt-[2px]'>TERM AND CONDITIONS</span></p>
-                </Link>
-
-                <Link href={''}>
-                <p className='flex gap-2 mb-1'><span className='hidden sm:block'>|</span>  <span className='mt-[2px]'>FOLLWER</span></p>
-                </Link>
-
-                <Link href={''}>
-                <p className='flex gap-2 mb-1'><span className='hidden sm:block'>|</span>  <span className='mt-[2px]'>HOME</span></p>
-                </Link>
-
-                <Link href={''}>
-                <p className='flex gap-2 mb-1'><span className='hidden sm:block'>|</span>  <span className='mt-[2px]'>CONTACT US</span></p>
-                </Link>
-               
-
-            </div>
-            <div className='w-full sm:w-1/5  flex justify-center sm:justify-end text-white'>
-             <Link href={''}> <p className=' py-4 sm:py-0 sm:text-base md:text-xl font-bold'>FLUX FANTASY</p>
-                </Link>  
-            </div>
-
+<div className={`w-full flex justify-center items-center bg-slate-900 sticky bottom-0 left-0 px-4 ${className}`}>
+      <div className='w-full sm:flex sm:flex-row flex-col md:py-4 justify-between items-center text-base sm:text-[10px] md:text-sm lg:text-base'>
+        <div className='hidden sm:flex w-full py-4 sm:py-0 gap-7 sm:gap-0 sm:w-1/6 flex justify-center items-center sm:justify-between'>
+          <Link href={''}><FaSquareFacebook className='text-white m-x-1' /></Link>
+          <Link href={''}><FaInstagramSquare className='text-white' /></Link>
+          <Link href={''}><FaSquareTwitter className='text-white' /></Link>
+          <Link href={''}><FaSquareYoutube className='text-white' /></Link>
+          <Link href={''}><TbBrandTiktok className='text-white' /></Link>
         </div>
+        <div className='w-full sm:hidden flex justify-center text-white'>
+          <Link href={''}>
+            <p className='py-4 sm:py-0 sm:text-base md:text-xl font-bold'>FLUX FANTASY</p>
+          </Link>
+        </div>
+        <ul className="flex justify-center items-center text-nowrap mb-6 text-[8px] xxs:text-[12px] sm:text-xs lg:text-sm font-medium text-white sm:mb-0 dark:text-gray-400">
+          <li className='pl-6 sm:pl-0 md:px-[10px] lg:px-[50px] '>
+           <Link href="#" className="hover:underline me-4 md:me-6 pl-4">© FLUXFANTASY</Link> 
+          </li>
+          <li className='flex'>
+            <div className='w-2 sm:w-3 lg:w-10 block sm:hidden'>|</div>
+            <Link href="#" className="hover:underline me-4 md:me-6">Terms of Use</Link>
+          </li>
+          <li className='flex'>
+            <div className='w-2 sm:w-3 lg:w-10'>|</div>
+            <Link href="#" className="hover:underline me-4 md:me-6">Privacy Policy</Link>
+          </li>
+          <li className='flex'>
+            <div className='w-2 sm:w-3 lg:w-10'>|</div>
+            <Link href="#" className="hover:underline me-4 md:me-6">Licensing</Link>
+          </li>
+          <li className='flex mr-4'>
+            <div className='w-2 sm:w-3 lg:w-10'>|</div>
+            <Link href="#" className="hover:underline me-4 md:me-6">Contact Us</Link>
+          </li>
+        </ul>
+        <div className='hidden sm:flex w-full sm:w-1/5 flex justify-center sm:justify-end text-white'>
+          <Link href={''}>
+            <p className='py-4 sm:py-0 sm:text-base md:text-xl font-bold'>FLUX FANTASY</p>
+          </Link>
+        </div>
+
+        <div className='block sm:hidden sm:flex w-full py-4 sm:py-0 gap-7 sm:gap-0 sm:w-1/6 flex justify-center items-center sm:justify-between'>
+          <Link href={''}><FaSquareFacebook className='text-white' /></Link>
+          <Link href={''}><FaInstagramSquare className='text-white' /></Link>
+          <Link href={''}><FaSquareTwitter className='text-white' /></Link>
+          <Link href={''}><FaSquareYoutube className='text-white' /></Link>
+          <Link href={''}><TbBrandTiktok className='text-white' /></Link>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Footer
+export default Footer;
