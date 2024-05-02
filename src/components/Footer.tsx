@@ -12,7 +12,7 @@ interface Props {
 function Footer({className}: Props) {
   return (
 
-<div className={`w-full flex justify-center items-center bg-slate-900 sticky bottom-0 left-0 px-4 ${className}`}>
+<div className={`w-full flex justify-center items-center bg-slate-900 sticky bottom-0 left-0 px-0 xxs:px-4 ${className}`}>
       <div className='w-full sm:flex sm:flex-row flex-col md:py-4 justify-between items-center text-base sm:text-[10px] md:text-sm lg:text-base'>
         <div className='hidden sm:flex w-full py-4 sm:py-0 gap-7 sm:gap-0 sm:w-1/6 flex justify-center items-center sm:justify-between'>
           <Link href={''}><FaSquareFacebook className='text-white m-x-1' /></Link>
@@ -28,23 +28,23 @@ function Footer({className}: Props) {
         </div>
         <ul className="flex justify-center items-center text-nowrap mb-6 text-[8px] xxs:text-[12px] sm:text-xs lg:text-sm font-medium text-white sm:mb-0 dark:text-gray-400">
           <li className='pl-6 sm:pl-0 md:px-[10px] lg:px-[50px] '>
-           <Link href="#" className="hover:underline me-4 md:me-6 pl-4">© FLUXFANTASY</Link> 
+           <Link href="#" className="hover:underline me-2 md:me-6 pl-4">© FLUXFANTASY</Link> 
           </li>
           <li className='flex'>
             <div className='w-2 sm:w-3 lg:w-10 block sm:hidden'>|</div>
-            <Link href="#" className="hover:underline me-4 md:me-6">Terms of Use</Link>
+            <Link href="#" className="hover:underline me-2 md:me-6">Terms of Use</Link>
           </li>
           <li className='flex'>
             <div className='w-2 sm:w-3 lg:w-10'>|</div>
-            <Link href="#" className="hover:underline me-4 md:me-6">Privacy Policy</Link>
+            <Link href="#" className="hover:underline me-2 md:me-6">Privacy Policy</Link>
           </li>
           <li className='flex'>
             <div className='w-2 sm:w-3 lg:w-10'>|</div>
-            <Link href="#" className="hover:underline me-4 md:me-6">Licensing</Link>
+            <Link href="#" className="hover:underline me-2 md:me-6">Licensing</Link>
           </li>
           <li className='flex mr-4'>
             <div className='w-2 sm:w-3 lg:w-10'>|</div>
-            <Link href="#" className="hover:underline me-4 md:me-6">Contact Us</Link>
+            <Link href="#" className="hover:underline me-2 md:me-6">Contact Us</Link>
           </li>
         </ul>
         <div className='hidden sm:flex w-full sm:w-1/5 flex justify-center sm:justify-end text-white'>
