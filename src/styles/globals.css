@@ -15,6 +15,7 @@
     background: linear-gradient(
       to bottom,
       transparent,
+
       rgb(var(--background-end-rgb))
     );
     /* rgb(var(--background-start-rgb)); */
@@ -27,3 +28,29 @@
   }
   
 
+/* user side bar */
+#scroll-1 {
+  overflow-x: hidden; 
+  overflow-y: auto; 
+}
+#scroll-1::-webkit-scrollbar-track {
+  background-color: #0c0539 ;
+}
+#scroll-1::-webkit-scrollbar-thumb {
+  background-color: #0c0539;
+  height: 2px;
+}
+#scroll-1::-webkit-scrollbar {
+  width: 2px;
+  height: 8px;
+  background-color: #0c0539;
+}
+#scroll-1::-webkit-scrollbar-thumb {
+  background-color: #0c0539;
+  height: 2px;
+}
+
+#scroll-1::-webkit-scrollbar-thumb {
+  background-color: yellow;
+}
+/* user side bar */
