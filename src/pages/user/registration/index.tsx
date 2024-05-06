@@ -1,12 +1,14 @@
 "useclient";
 
-import React from "react";
+import React, { useState } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 import Button from "@/components/Button";
 import Input from "@/components/Input";
 import Image from "next/image";
 
 function Index() {
+  const [agreeTerms, setAgreeTerms] = useState(false);
+  const [agreeCommunications, setAgreeCommunications] = useState(false);
   const gender = [
     {
       label: "Male",
@@ -17,6 +19,17 @@ function Index() {
       value: "female",
     },
   ];
+
+
+
+
+  const handleTermsChange = () => {
+    setAgreeTerms(!agreeTerms);
+  };
+
+  const handleCommunicationsChange = () => {
+    setAgreeCommunications(!agreeCommunications);
+  };
   return (
     <>
       <div className="relative">
@@ -124,6 +137,34 @@ function Index() {
               </div>
             </div>
 
+            <div className="w-full space-y-1 px-2 py-4">
+        <div className="w-full flex items-center text-white text-base">
+              
+                  <input
+                    type="checkbox"
+                    checked={agreeTerms}
+                    onChange={handleTermsChange}
+                    className="mr-2"
+                  />
+                  <p> I agree to the Terms of Service</p>
+            
+              </div>
+              <div className="w-full flex items-center gap-1 text-white text-base">
+            
+                  <input
+                    type="checkbox"
+                    checked={agreeCommunications}
+                    onChange={handleCommunicationsChange}
+                    className=""
+                  />
+                 <p> I agree to receive Email & SMS Communications from FLUX
+                  FANTASY
+                  </p>
+              
+              </div>
+
+              </div>
+
             <div className="w-full flex justify-center mt-10">
               <Button
                 type="submit"
@@ -133,7 +174,11 @@ function Index() {
               </Button>
             </div>
           </div>
+
+          
         </div>
+
+    
       </div>
     </>
   );
