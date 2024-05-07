@@ -13,7 +13,7 @@ const Index = () => {
     },
 
     {
-      title: "Lorem ipsum dolor",
+      title: "Lorem ipsxum doldor",
       img: "/images/feature2.png",
     },
 
@@ -31,7 +31,7 @@ const Index = () => {
       img: "/images/character3.png",
     },
     {
-      title: "Lorem ipsum dolor",
+      title: "Lore",
       img: "/images/feature2.png",
     },
   ];
