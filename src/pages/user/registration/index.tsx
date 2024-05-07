@@ -39,19 +39,19 @@ function Index() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
-      <div className=" w-full sm:w-[500px]   border border-gray-500 border-2 relative" style={{ background: "url(/images/bg1.jpg)" }}>
+      <div className=" w-full md:w-[500px] border border-gray-500  relative" style={{ background: "url(/images/bg1.jpg)" }}>
 
         <div className="w-full ">
 
           <img src="/images/signup/signupLogo.png" />
         </div>
 
-        <div className=" mt-4 sm:mt-1 flex flex-col justify-center px-2 items-center">
-          <div className="w-full grid-cols-1 grid md:grid-cols-2   gap-2 mt-1">
+        <div className="mt-4 md:mt-0 lg:mt-1 sm:mt-1 flex flex-col justify-center px-2 items-center">
+          <div className="w-full grid-cols-1 grid md:grid-cols-2   gap-2 ">
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-4"
+                className="text-white text-base font-roboto leading-2"
               >
                 First Name
               </label>
@@ -59,13 +59,13 @@ function Index() {
                 type={"text"}
                 placeholder="First Name"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-4"
+                className="text-white text-base font-roboto leading-2"
               >
                 Last Name
               </label>
@@ -73,13 +73,13 @@ function Index() {
                 type={"text"}
                 placeholder="Last Name"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-4"
+                className="text-white text-base font-roboto leading-2"
               >
                 Email
               </label>
@@ -87,54 +87,54 @@ function Index() {
                 type={"email"}
                 placeholder="email@gmail.com"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-4"
+                className="text-white text-base font-roboto leading-2"
               >
                 Date of Birth
               </label>
               <Input
                 type="date"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
 
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-4"
+                className="text-white text-base font-roboto leading-2"
               >
                 Password
               </label>
               <Input
                 type={"password"}
                 placeholder="at least 8 characters"
-                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] px-4 py-[6px] mt-1"
+                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] px-4 py-[6px] md:py-1 mt-1"
                 inputClassName="focus:outline-none focus:border-none bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-4"
+                className="text-white text-base font-roboto leading-2"
               >
                 Confirm Password
               </label>
               <Input
                 type={"password"}
                 placeholder="at least 8 characters"
-                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] px-4 py-[6px] mt-1"
+                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] px-4 py-[6px] md:py-1 mt-1"
                 inputClassName="focus:outline-none focus:border-none bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
           </div>
 
-          <div className="w-full space-y-1 px-2 py-1">
+          <div className="w-full space-y-1 px-2 py-[1px]">
             <div className="w-full flex items-center text-white text-base">
 
               <input
@@ -166,7 +166,7 @@ function Index() {
           <div className="w-full flex justify-center mt-1 mb-2">
             <Button
               type="submit"
-              className="bg-[#1E4178] w-full rounded-md text-[#FFFFFF] text-base font-bold font-NotoSans leading-5 py-2 "
+              className="bg-[#1E4178] w-full rounded-md text-[#FFFFFF] text-sm font-bold font-NotoSans leading-5 py-1 "
             >
               Sign Up
             </Button>
