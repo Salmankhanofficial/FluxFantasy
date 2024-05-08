@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { RiAccountCircleFill } from "react-icons/ri";
 import React, { useState } from "react";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiHeadphones } from "react-icons/ci";
@@ -27,7 +28,7 @@ const Sidebar = ({ mainClassName, notificationLength,onClick }: props) => {
   ];
   return (
     <div
-      className={`h-screen  sm:pr-2   flex flex-col  bg-[#0c0539] ${mainClassName}`}
+      className={`h-screen  sm:pr-2   flex flex-col  bg-black ${mainClassName}`}
     >
       {/* Logo div start from here*/}
       <div onClick={onClick} className="text-white text-4xl flex justify-end pr-3 sm:hidden">x</div>
@@ -44,7 +45,7 @@ const Sidebar = ({ mainClassName, notificationLength,onClick }: props) => {
       <div className="px-4 flex justify-between items-center">
         <div className="text-yellow-500 text-xl">Ella</div>
         <div className="flex gap-3 cursor-pointer">
-          <CiHeadphones className="text-white" />
+          <RiAccountCircleFill  className="text-white" />
           <MdOutlineMail className="text-white" />
           <IoIosNotificationsOutline
             className={`${

@@ -3,10 +3,12 @@ import { TiArrowSortedDown } from "react-icons/ti";
 import Button from "@/components/Button";
 import Input from "@/components/Input";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 function Index() {
   const [agreeTerms, setAgreeTerms] = useState(false);
   const [agreeCommunications, setAgreeCommunications] = useState(false);
+  const router = useRouter();
   const gender = [
     {
       label: "Male",
@@ -165,6 +167,7 @@ function Index() {
 
           <div className="w-full flex justify-center mt-1 mb-2">
             <Button
+             onClick={()=>router?.push('/user/login')}
               type="submit"
               className="bg-[#1E4178] w-full rounded-md text-[#FFFFFF] text-sm font-bold font-NotoSans leading-5 py-1 "
             >

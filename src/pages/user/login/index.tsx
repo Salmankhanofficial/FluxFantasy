@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { BsFillKeyFill } from "react-icons/bs";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Index() {
   const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
@@ -85,8 +87,10 @@ function Index() {
                     </div>
                   </div>
                   <div className="w-full  mt-3">
-                    <button className="bg-[#339F92] py-2  text-center w-full rounded-md text-white">
-                      Sign Up
+                    <button
+                    onClick={()=>router?.push('/user/home')}
+                    className="bg-[#339F92] py-2  text-center w-full rounded-md text-white">
+                      Sign In
                     </button>
                   </div>
                 </div>
