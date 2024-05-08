@@ -38,14 +38,13 @@ function Index() {
           objectFit="contain"
           alt="Background"
         />
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
       <div className=" w-full md:w-[500px] border border-gray-500  relative" style={{ background: "url(/images/bg1.jpg)" }}>
 
         <div className="w-full ">
 
-          <img src="/images/signup/signupLogo.png" />
+          <Image width={0} height={0} className="w-full h-full" src="/images/signup/signupLogo.png" alt={"signuplogo"} />
         </div>
 
         <div className="mt-4 md:mt-0 lg:mt-1 sm:mt-1 flex flex-col justify-center px-2 items-center">
