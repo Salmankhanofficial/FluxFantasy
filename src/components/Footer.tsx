@@ -12,7 +12,7 @@ interface Props {
 function Footer({className}: Props) {
   return (
 
-<div className={`w-full flex justify-center items-center bg-slate-900 sticky bottom-0 left-0 px-0 xxs:px-4 ${className}`}>
+<div className={`w-full flex justify-center items-center bg-[#05021B]   left-0 px-0 xxs:px-20 ${className}`}>
       <div className='w-full sm:flex sm:flex-row flex-col md:py-4 justify-between items-center text-base sm:text-[10px] md:text-sm lg:text-base'>
         <div className='hidden sm:flex w-full py-4 sm:py-0 gap-7 sm:gap-0 sm:w-1/6 flex justify-center items-center sm:justify-between'>
           <Link href={''}><FaSquareFacebook className='text-white m-x-1' /></Link>
