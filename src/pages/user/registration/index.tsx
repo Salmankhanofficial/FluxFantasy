@@ -29,7 +29,7 @@ function Index() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen relative">
+    <div className="flex items-center justify-center h-screen relative"   style={{ fontFamily: 'Kallisto'   }}>
       <div className="  bg-black absolute inset-0  h-screen  z-0">
 
         <Image
@@ -52,7 +52,7 @@ function Index() {
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-2"
+                className="text-white text-base  leading-2"
               >
                 First Name
               </label>
@@ -60,13 +60,13 @@ function Index() {
                 type={"text"}
                 placeholder="First Name"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 px-2 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-2"
+                className="text-white text-base  leading-2"
               >
                 Last Name
               </label>
@@ -74,62 +74,62 @@ function Index() {
                 type={"text"}
                 placeholder="Last Name"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none px-2 py-[6px] md:py-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-2"
+                className="text-white text-base  leading-2"
               >
                 Email
               </label>
               <Input
                 type={"email"}
-                placeholder="email@gmail.com"
+                placeholder="Email@gmail.com"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none px-2 py-[6px] md:py-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-2"
+                className="text-white text-base  leading-2"
               >
                 Date of Birth
               </label>
               <Input
                 type="date"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 px-3 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 px-2 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
 
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-2"
+                className="text-white text-base  leading-2"
               >
                 Password
               </label>
               <Input
                 type={"password"}
-                placeholder="at least 8 characters"
-                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] px-4 py-[6px] md:py-1 mt-1"
+                placeholder="At least 8 characters"
+                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] px-2 py-[6px] md:py-1 mt-1"
                 inputClassName="focus:outline-none focus:border-none bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
             <div className="w-full">
               <label
                 htmlFor=""
-                className="text-white text-base font-roboto leading-2"
+                className="text-white text-base  leading-2"
               >
                 Confirm Password
               </label>
               <Input
                 type={"password"}
-                placeholder="at least 8 characters"
-                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] px-4 py-[6px] md:py-1 mt-1"
+                placeholder="At least 8 characters"
+                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] px-2 py-[6px] md:py-1 mt-1"
                 inputClassName="focus:outline-none focus:border-none bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
             </div>
