@@ -469,8 +469,8 @@ const Charactersheet: React.FC = () => {
     setCoverImageSrc(imageUrl);
   };
   return (
-    <div className="w-full px-5 pb-[50px] flex flex-col justify-center items-center border-2 ">
-      <div className="w-full flex flex-col items-center justify-center px-5 py-5">
+    <div className="w-full px-5 pb-[50px]  flex flex-col justify-center items-center border-2 ">
+      <div className="w-full flex flex-col items-center justify-center  px-5 py-5">
         <div className="flex flex-row w-full justify-between">
           <div className="flex flex-col w-[30%]  ">
           <div className="flex gap-1 items-center justify-start">
@@ -792,7 +792,7 @@ const Charactersheet: React.FC = () => {
               </div>
             </div>
 
-            <div className="w-full flex justify-start pl-2">-------------------------------------------------------------</div>
+            <div className="w-full flex ml-10 justify-center text-center pl-2">-------------------------------------------------------</div>
 
             <div className="flex w-full px-3 items-center gap-2">
               <p className="text-nowrap">Basic Attack:</p>
