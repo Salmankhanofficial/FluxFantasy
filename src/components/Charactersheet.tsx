@@ -522,13 +522,13 @@ const Charactersheet: React.FC = () => {
                 alt=""
                 className="w-9 h-9"
               />
-              <p className="font-extrabold text-xs sm:text-sm md:text-base text-gray-200">
+              <p className="font-extrabold text-xs sm:text-sm md:text-base text-gray-200  ">
                 STUDY
               </p>
             </div>
             <input
               type="text"
-              className="w-full py-2  text-whitebg-[#343A40] border-[2px] border-gray-500 "
+              className="w-full py-2  text-white bg-[#343A40] border-[2px] border-gray-500 "
             />
           </div>
           <div className="flex flex-col ">
@@ -708,7 +708,7 @@ const Charactersheet: React.FC = () => {
           
           <div className="w-1/2 flex gap-y-3 flex-col text-white justify-center items-center">
           
-          <div className="flex gap-1 -ml-[205px] text-nowrap items-center justify-start">
+          <div className="flex gap-1  text-nowrap items-center justify-center">
                 <Image
                   width={0}
                   height={0}
