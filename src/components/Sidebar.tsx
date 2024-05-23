@@ -17,14 +17,14 @@ const Sidebar = ({ mainClassName, notificationLength,onClick }: props) => {
   const router = useRouter();
 
   const data = [
-    { title: "create an oc" },
-    { title: "my oc library" },
+    { title: "create an OC" },
+    { title: "my OC library" },
     { title: "character journal" },
-    { title: "oc creation Guide" },
+    { title: "OC creation Guide" },
     { title: "the universe" },
     { title: "mechanics" },
-    { title: "join a game !" },
-    { title: "discard" },
+    { title: "join a game!" },
+    { title: "Discord" },
   ];
   return (
     <div
