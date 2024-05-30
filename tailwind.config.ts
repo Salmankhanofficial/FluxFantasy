@@ -13,7 +13,8 @@ const config: Config = {
         'xxl-1200':'1200px',
         'x-1-1150':'1150px',
         'x-2-1100':'1100px',
-        'x-3-885':'885px'
+        'x-3-885':'885px',
+        'x-4-903':'903px'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

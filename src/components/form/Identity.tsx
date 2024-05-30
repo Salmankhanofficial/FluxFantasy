@@ -4,7 +4,7 @@ const Identity = () => {
   return (
     <div className='w-full font-mediumbg-black text-gray-200 px-4 pb-8 text-xs sm:text-sm md:text-base'>
         <h1 className='mb-2 '>character Name</h1>
-        <input type='text ' className='py-1 px-2 bg-[#343A40] w-full rounded-sm  border-[2px] border-gray-500' />
+        <input type='text ' className='py-1 px-2 bg-[#343A40] border-[2px] border-gray-500 w-full rounded-sm  ' />
       <div className='flex  flex-col md:flex-row justify-between py-2  gap-2 items-center w-full'>
         <div className='w-full flex gap-1 md:w-1/2'>
         <div className='w-1/2'>
