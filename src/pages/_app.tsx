@@ -19,7 +19,7 @@ const kallisto = localFont({
       style: "medium",
     },
     {
-      path: "../../public/fonts/fonnts.com-Kallisto_light.otf",
+      path: "../../public/fonts/fonnts.com-Kallisto_Light.otf",
       weight: "400",
       style: "normal",
     },
@@ -33,5 +33,5 @@ export default function App({ Component, pageProps }: AppProps) {
     
   >
     <Component {...pageProps} />;
-  </main>;
+  </main>
 }
