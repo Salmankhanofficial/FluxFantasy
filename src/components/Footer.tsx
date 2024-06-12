@@ -47,11 +47,11 @@ function Footer({className}: Props) {
             <Link href="#" className="hover:underline me-2 md:me-6">Contact Us</Link>
           </li>
         </ul>
-        {/* <div className='hidden sm:flex w-full sm:w-1/5 flex justify-center sm:justify-end text-white'>
-          <Link href={''}>
-            <p className='py-4 sm:py-0 sm:text-base md:text-xl font-bold text-[#ABABAB]'>FLUX FANTASY</p>
-          </Link>
-        </div> */}
+          {/* <div className='hidden sm:flex w-full sm:w-1/5 flex justify-center sm:justify-end text-white'>
+            <Link href={''}>
+              <p className='py-4 sm:py-0 sm:text-base md:text-xl font-bold text-[#ABABAB]'>FLUX FANTASY</p>
+            </Link>
+          </div> */}
 
         <div className='block sm:hidden sm:flex w-full py-4 sm:py-0 gap-7 sm:gap-0 sm:w-1/6 flex justify-center items-center sm:justify-between'>
           <Link href={''}><FaSquareFacebook className='text-white' /></Link>
