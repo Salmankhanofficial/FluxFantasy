@@ -26,6 +26,9 @@ const config: Config = {
       boxShadow: {
         custom: '10px 10px 50px 50px rgba(0,0,0,0.75) inset',
       },
+      fontFamily: {
+        kallisto: ['var(--kallisto)']
+      }
     },
   },
   plugins: [],

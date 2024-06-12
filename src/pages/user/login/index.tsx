@@ -14,7 +14,7 @@ function Index() {
   };
 
   return (
-    <div className="w-full realtive">
+    <div className="w-full realtive font-kallisto">
         <Image
           alt=""
           height={0}
@@ -34,9 +34,9 @@ function Index() {
               src={"/images/login/logo-removebg-preview.png"}
             />
           </div>
-          <p className="mt-[-30px] font-medium text-xl text-white">CHARACTER PORTAL</p>
+          <p className="mt-[-30px]  text-xl text-white py-5 tracking-widest font-kallisto ">CHARACTER PORTAL</p>
           <div className="md:w-[95%] lg:w-[90%] xxl-1200:w-[77%] x-1-1150:w-[80%] x-2-1100:w-[85%] x-3-885:w-[99%] w-[75%]">
-            <div className="w-full flex flex-col justify-center">
+            <div className="w-full flex flex-col justify-center py-7">
               <div className="w-full bg-gradient-linear flex justify-center">
                 <p className="text-white py-2">User Login</p>
               </div>
@@ -46,16 +46,16 @@ function Index() {
                     <FaUser className="pl-2 h-5 w-5 text-gray-500" />
                     <input
                       type="text"
-                      placeholder="User Name"
-                      className="bg-transparent focus:outline-none text-white text-sm py-2 md:py-3 px-3"
+                      placeholder="username"
+                      className="bg-transparent focus:outline-none placeholder:text-[#ABABAB] text-white text-sm py-2 md:py-3 px-3 placeholder:font-medium tracking-wider"
                     />
                   </div>
                   <div className="w-full border border-black bg-[#141414]  flex items-center gap-2">
                     <BsFillKeyFill className="pl-2 h-5 w-5 text-gray-500" />
                     <input
                       type={showPassword ? "text" : "password"}
-                      placeholder="User Password"
-                      className="bg-transparent focus:outline-none text-white text-sm py-2 md:py-3 px-3"
+                      placeholder="password"
+                      className="bg-transparent focus:outline-none text-white text-sm py-2 md:py-3 px-3 placeholder:text-[#ABABAB] placeholder:font-medium tracking-wider"
                     />
                   </div>
 

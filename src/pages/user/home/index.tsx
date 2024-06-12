@@ -143,17 +143,17 @@ const Index = () => {
 
   return (
     <Layout>
-      <div className="flex w-full bg-black justify-end mx-auto px-4 md:px-8 items-center">
+      <div className="flex w-full bg-black justify-end mx-auto px-4 md:px-8 items-center font-kallisto">
         <button
           onClick={() => router?.push("/user/charactersheet")}
-          className="text-white px-1 sm:px-2 text-[12px] sm:text-base font-bold py-2 mt-4 rounded-md bg-gray-500 hover:bg-green-800 text-nowrap hover:font-norml"
-          style={{ fontFamily: 'Kallisto' }}
+          className="text-white px-1 sm:px-2 text-[12px] sm:text-base font-bold py-2 mt-4 rounded-md bg-gray-500 hover:bg-green-800 text-nowrap hover:font-norml font-kallisto"
+         
         >
           Create New Character
         </button>
       </div>
-      <h1 className="text-[#F1D347] text-end pr-28 bg-black pt-4 md:mt-0 text-nowrap font-bold text-2xl" style={{ fontFamily: 'Kallisto' }}>
-        Character Library
+      <h1 className="text-[#F1D347] text-end pr-28 bg-black pt-4 md:mt-0 text-nowrap font-medium text-lg font-kallisto tracking-wide">
+        CHARACTER LIBRARY
       </h1>
       <div className="flex flex-wrap justify-center bg-black pt-10 pb-32 w-full gap-y-8 px-20 gap-3">
         {characterData?.map((character, index) => (
@@ -168,7 +168,7 @@ const Index = () => {
               className="rounded-xl w-[400px] sm:w-[200px] sm:h-[200px]"
               alt=""
             />
-            <h1 className="text-white text-center py-1 text-xl cursor-pointer">
+            <h1 className="text-white text-center py-1 text-md cursor-pointer font-kallisto">
               {character?.title}
             </h1>
           </div>

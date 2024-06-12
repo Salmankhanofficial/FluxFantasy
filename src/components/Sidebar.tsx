@@ -57,21 +57,21 @@ const Sidebar = ({ mainClassName, notificationLength,onClick }: props) => {
 
       <div
      
-        className="items-center sm:items-start flex flex-col  px-2"
+        className="items-center sm:items-start flex flex-col  px-2 font-kallisto text-[#ABABAB]"
       >
         <div className="flex flex-col ">
           <div className="px-2 mt-4">
-            <ul className="px-2 mt-4" style={{ fontFamily: 'Kallisto'   }}>
+            <ul className="px-2 mt-4" >
               {/* Mapping over the array to generate li elements */}
               {data.map((item, index) => (
                 <li key={index}>
                   <div
                     onClick={() => router.push("/")}
-                    className="text-white text-base text-transform: capitalize"
+                    className="text-[#ABABAB] text-sm text-transform: capitalize font-kallisto font-medium tracking-wider"
                   >
                     <div
                       onClick={() => router.push("/")}
-                      className={` cursor-pointer hover:text-red-300 ${index < 1 ? "text-yellow-400" : "text-white"}`}
+                      className={` cursor-pointer hover:text-red-300 ${index < 1 ? "text-yellow-400" : "text-[#ABABAB]"}`}
                     >
                       {item.title}
                     </div>

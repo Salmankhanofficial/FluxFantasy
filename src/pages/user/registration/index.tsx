@@ -78,7 +78,7 @@ const Index: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen relative" style={{ fontFamily: 'Kallisto' }}>
+    <div className="flex items-center justify-center h-screen relative font-kallisto font-medium tracking-wider" >
       <div className="bg-black absolute inset-0 h-screen z-0">
         <Image
           src="/images/signup/background.jpg"
@@ -88,7 +88,7 @@ const Index: React.FC = () => {
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
-      <div className="w-full md:w-[500px] border border-gray-500 relative bg-black">
+      <div className="w-full md:w-[600px] border border-gray-500 relative bg-black">
         <div>
           <Image width={0} height={0} className="w-full h-full" src="/images/signup/signupLogo.png" alt="signuplogo" />
         </div>
