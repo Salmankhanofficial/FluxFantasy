@@ -61,6 +61,8 @@
 
 /* fonts.css */
 
-
+.input-placeholder::placeholder {
+  font-size: 11px; /* Adjust the size as needed */
+}
 
 /* Add similar blocks for other styles like italic, bold italic if available */
