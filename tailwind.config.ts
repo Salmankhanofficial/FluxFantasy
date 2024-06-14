@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       screens: {
         'xxs': '478px',
-        'xxl-1200':'1200px',
+        'xxl-1250':'1200px',
+        'xxl-1270':'1270px',
         'x-1-1150':'1150px',
         'x-2-1100':'1100px',
         'x-3-885':'885px',

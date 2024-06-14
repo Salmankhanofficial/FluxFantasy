@@ -25,13 +25,13 @@ const kallisto = localFont({
     },
   ],
   variable: '--kallisto',
-});
+})
 
 export default function App({ Component, pageProps }: AppProps) {
   return <main
     className={`${kallisto?.variable}  font-sans`}
     
   >
-    <Component {...pageProps} />;
+    <Component {...pageProps} />
   </main>
 }
