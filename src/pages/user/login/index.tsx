@@ -31,7 +31,7 @@ function Index() {
               height={0}
               width={0}
               className="w-[100%] object-cover"
-              src={"/images/login/logo-removebg-preview.png"}
+              src={"/images/sidebar/logo.png"}
             />
           </div>
           <p className="mt-[-30px]  text-xl text-white py-5 tracking-widest font-kallisto ">CHARACTER PORTAL</p>

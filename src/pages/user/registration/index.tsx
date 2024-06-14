@@ -93,7 +93,7 @@ const Index: React.FC = () => {
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
-      <div className="w-full md:w-[500px] border border-gray-500 relative bg-black">
+      <div className="w-full md:w-[500px]  border border-gray-500 relative bg-black">
         <div>
           <Image
             width={0}
@@ -122,7 +122,7 @@ const Index: React.FC = () => {
                 onChange={handleInputChange}
                 placeholder="First Name"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none focus:border-none py-[6px] md:py-1 px-2 bg-transparent text-[#8897AD] placeholder:text-xs text-base font-roboto leading-4"
+                inputClassName="focus:outline-none focus:border-none py-[6px] pb-2 md:pt-1 px-2 bg-transparent text-[#8897AD] placeholder:text-xs text-base  leading-4"
               />
               {errors.firstName && (
                 <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>
@@ -142,7 +142,7 @@ const Index: React.FC = () => {
                 onChange={handleInputChange}
                 placeholder="Last Name"
                 className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none placeholder:text-xs focus:border-none px-2 py-[6px] md:py-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none placeholder:text-xs focus:border-none px-2 py-[6px] pb-2 md:pt-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
               {errors.lastName && (
                 <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>
@@ -160,9 +160,9 @@ const Index: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                placeholder="Email@gmail.com"
+                placeholder="chris@gmail.com"
                 className="bg-[#F7FBFF]  border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none placeholder:text-xs focus:border-none px-2 py-[6px] md:py-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
+                inputClassName="focus:outline-none placeholder:text-xs focus:border-none px-2 py-[6px] pb-2 md:pt-1 bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
               {errors.email && (
                 <p className="text-red-500 text-xs mt-1">{errors.email}</p>
@@ -180,8 +180,8 @@ const Index: React.FC = () => {
                 name="dateOfBirth"
                 value={formData.dateOfBirth}
                 onChange={handleInputChange}
-                className="bg-[#F7FBFF] border border-[#D4D7E3] rounded-[4px] mt-1"
-                inputClassName="focus:outline-none placeholder:text-xs focus:border-none py-[6px] md:py-1 px-2 bg-transparent text-[#8897AD] text-base leading-4 input-placeholder"
+                className="bg-[#F7FBFF] border   border-[#D4D7E3] rounded-[4px] mt-1"
+                inputClassName="focus:outline-none text-xs focus:border-none py-[6px] pb-2 md:pt-1 px-2 bg-transparent text-[#8897AD] text-base leading-4 input-placeholder"
               />
 
               {errors.dateOfBirth && (
@@ -203,11 +203,11 @@ const Index: React.FC = () => {
                 value={formData.password}
                 onChange={handleInputChange}
                 placeholder="At least 8 characters"
-                className="bg-[#F7FBFF] placeholder:text-xs border border-[#D4D7E3] rounded-[4px] px-2 py-[6px] md:py-1 mt-1"
+                className="bg-[#F7FBFF] placeholder:text-xs border border-[#D4D7E3] rounded-[4px] px-2 py-[6px] pb-2 md:pt-1 mt-1"
                 inputClassName="focus:outline-none placeholder:text-xs focus:border-none bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
               {errors.password && (
-                <p className="text-red-500 text-xs mt-1">{errors.password}</p>
+                <p className="text-red-500 text-[10px] text-nowrap mt-1">{errors.password}</p>
               )}
             </div>
             <div className="w-full">
@@ -223,7 +223,7 @@ const Index: React.FC = () => {
                 value={formData.confirmPassword}
                 onChange={handleInputChange}
                 placeholder="At least 8 characters"
-                className="bg-[#F7FBFF]  border border-[#D4D7E3] rounded-[4px] px-2 py-[6px] md:py-1 mt-1"
+                className="bg-[#F7FBFF]  border border-[#D4D7E3] rounded-[4px] px-2 py-[6px] pb-2 md:pt-1 mt-1"
                 inputClassName="focus:outline-none placeholder:text-xs focus:border-none bg-transparent text-[#8897AD] text-base font-roboto leading-4"
               />
               {errors.confirmPassword && (
@@ -233,7 +233,7 @@ const Index: React.FC = () => {
               )}
             </div>
           </div>
-          <div className="w-full space-y-1 px-2 py-[1px]">
+          <div className="w-full   py-[1px]">
             <div className="w-full flex items-center text-white text-base">
               <input
                 type="checkbox"
@@ -246,7 +246,7 @@ const Index: React.FC = () => {
                 I agree to the Terms of Service
               </p>
               {errors.agreeTerms && (
-                <p className="text-red-500 text-xs pl-2 mt-1">
+                <p className="text-red-500 text-[10px] text-nowrap pl-2 mt-1">
                   {errors.agreeTerms}
                 </p>
               )}
@@ -263,10 +263,10 @@ const Index: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="w-full flex justify-center mt-1 mb-2">
+          <div className="w-full flex justify-center mt-1 mb-8">
             <Button
               type="submit"
-              className="bg-[#1E4178] w-full rounded-md text-[#FFFFFF] text-sm font-bold font-NotoSans leading-5 py-1"
+              className="bg-[#1E4178] hover:bg-slate-700 w-full rounded-md text-[#FFFFFF] text-sm font-bold font-NotoSans leading-5 py-2"
             >
               Sign Up
             </Button>

@@ -27,13 +27,22 @@ const Sidebar = ({ mainClassName, notificationLength,onClick }: props) => {
     { title: "Discord" },
   ];
   return (
+    
     <div
-      className={` sm:pr-2   flex flex-col  bg-black ${mainClassName}`}
+      className={` sm:pr-2   flex flex-col  relative bg-black ${mainClassName}`}
     >
+            <div className="bg-[#100D1C] h-24 w-[260px] z-50 absolute -top-20   ">
+
+</div>
+
+            <div className="bg-black h-24 w-36 rotate-[55deg] absolute top-8 -right-20 ">
+
+</div>
+
       {/* Logo div start from here*/}
       <div onClick={onClick} className="text-white text-4xl flex justify-end pr-3 sm:hidden">x</div>
    
-      <div className={`text-white sticky flex justify-center`}>
+      <div className={`text-white sticky flex justify-center pt-4`}>
         <Image
           width={250}
           height={250}
