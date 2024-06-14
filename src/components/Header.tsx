@@ -13,7 +13,7 @@ const Header = ({ onClick }: Props) => {
         "w-full  shadow-lg   bg-[#100D1C]  py-2 px-1 md:px-4 flex justify-end items-center  "
       }
     >
-   
+
       <div className="bg-black text-3xl  text-white sm:hidden" onClick={onClick}>
         {" "}
         <GiHamburgerMenu />{" "}

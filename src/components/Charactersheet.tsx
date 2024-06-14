@@ -29,7 +29,7 @@ const Charactersheet: React.FC = () => {
   };
 
   return (
-    <div className="w-full px-5 py-5 flex flex-col justify-center items-center border- ">
+    <div className="w-full px-5 py-5 flex flex-col justify-center items-center font-kallisto">
       <div className="w-full flex flex-col md:flex md:flex-row md:justify-between">
         <div className="w-full md:w-1/4 flex flex-col">
           <div className="flex gap-1 items-center justify-start">
