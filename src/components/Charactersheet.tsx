@@ -21,7 +21,7 @@ const Charactersheet: React.FC = () => {
     const isClicked = clickedInputs.includes(index);
     const isLeftUpper = index < 5;
     const isLeftLower = index >= 10 && index < 15;
-    const colorClass = isClicked ? "bg-red-400 point" : "bg-black";
+    const colorClass = isClicked ? "bg-red-400 point " : "bg-black ";
     const leftColorClass = isClicked ? "bg-green-400" : "bg-black";
     return `w-[45px] h-[50px] ${
       isLeftUpper || isLeftLower ? leftColorClass : colorClass
@@ -596,11 +596,11 @@ const Charactersheet: React.FC = () => {
             </div>
 
             <div className="w-full flex justify-between">
-              <div className="w-[40%] flex flex-col">
+              <div className="w-[40%] flex flex-col ">
                 {[...Array(5)].map((_, index) => (
                   <div
                     key={index}
-                    className="w-full flex justify-between gap-4 items-center"
+                    className="w-full flex justify-between gap-4  items-center"
                   >
                     <div>
                       <p className="text-white">100</p>
@@ -624,7 +624,7 @@ const Charactersheet: React.FC = () => {
                 />
               </div>
 
-              <div className="w-[40%] flex flex-col">
+              <div className="w-[40%] flex  flex-col">
                 {[...Array(5)].map((_, index) => (
                   <div
                     key={index + 5}
@@ -646,6 +646,7 @@ const Charactersheet: React.FC = () => {
               <div className="w-[80%] border-b-2 border-t-2 border-dashed py-[1px]"></div>
             </div>
 
+                {/* left inputs */}
             <div className="w-full flex justify-between">
               <div className="w-[40%] flex flex-col mb-2">
                 {[...Array(5)].map((_, index) => (
@@ -667,6 +668,7 @@ const Charactersheet: React.FC = () => {
                 ))}
               </div>
 
+                {/* right inputs */}
               <div className="w-[20%]"></div>
 
               <div className="w-[40%] flex flex-col mb-2">
