@@ -32,6 +32,6 @@ export default function App({ Component, pageProps }: AppProps) {
     className={`${kallisto?.variable}  font-sans`}
     
   >
-    <Component {...pageProps} />;
+    <Component {...pageProps} />
   </main>
 }
