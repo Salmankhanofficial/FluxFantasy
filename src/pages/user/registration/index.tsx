@@ -531,6 +531,7 @@ const Index: React.FC = () => {
                 onChange={handleTermsChange}
                 className="mr-2 placeholder:text-xs"
               />
+              
               <p className="text-[12px] text-nowrap sm:text-[9px]">
                 I agree to the Terms of Service
               </p>
