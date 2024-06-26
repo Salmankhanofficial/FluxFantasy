@@ -232,13 +232,19 @@ function Index() {
     setShowPassword(!showPassword);
   };
   return (
-    <div className="h-screen relative max-w-[1600px] bg-black">
-      <div className="w-full max-h-screen">
-        <img
-          src="/images/login/bkgd_registration.jpg"
-          alt=""
-          className="h-screen w-full"
-        />
+
+    <div className="relative min-h-screen max-w-[1900px] bg-black flex justify-center">
+    <div className="max-w-screen-xl sm:rounded-lg flex justify-center flex-1">
+    <div className="lg:flex-1 opacity-1 text-center flex">
+        <div
+          className=" w-full max-h-screen "
+          style={{
+            backgroundImage: "url('/images/login/bkgd_registration.jpg')",
+            backgroundSize: "cover",
+            // backgroundPosition: "center",
+            backgroundRepeat:"no-repeat"
+          }}
+        ></div>
       </div>
 
       <div className="w-full sm:w-[250px] absolute sm:right-10 top-0 flex flex-col justify-center items-center">
@@ -323,6 +329,7 @@ function Index() {
               
         </form>
       </div>
+    </div>
     </div>
   );
 }
